@@ -20,6 +20,7 @@ public class Application {
 
 		if(!resp) {
 			System.out.println("Hospital Not Added");
+			
 		} else {
 			System.out.println("Hospital Added");
 		}
