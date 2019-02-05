@@ -1,0 +1,8 @@
+
+Create a Class Insurance with a  method calculate Premium 
+
+
+Create two subclasses LifeInsurance and Vechile Insurance 
+
+override the method calculate Premium and test the code
+
