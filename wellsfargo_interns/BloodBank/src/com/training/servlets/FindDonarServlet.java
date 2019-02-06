@@ -1,6 +1,8 @@
 package com.training.servlets;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,10 +33,11 @@ public class FindDonarServlet extends HttpServlet {
 		String reqGroup = request.getParameter("bloodGroup");
 		
 		
-		   String donarName = "Ramesh";
+		   List<String> donarName = Arrays.asList("Ramesh" ,"Suresh","Magesh","Rajesh");
 		   
 		   if(reqGroup.equals("opos")) {
-			    donarName = "Suresh";
+			   
+			    donarName = Arrays.asList("Kanna","Manna","Panna","Thamanna");
 		   }
 		   
 		   request.setAttribute("donar", donarName);
