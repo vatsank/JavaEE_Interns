@@ -8,17 +8,22 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:useBean id="bean" class="com.training.beans.ValidateBean" scope="session"/>
+
+<jsp:setProperty property="*" name="bean"/>
 
 
-<c:if test="${ param.userName eq 'india' and param.passWord eq 'india' }">
- <c:out value="valid user"></c:out>
+<c:if test="${bean.validate()}">
+	 <jsp:forward page="SearchByGroup.jsp"></jsp:forward>
 </c:if>
 
 
-<c:if test="${ !(param.userName eq 'india' and param.passWord eq 'india') }">
- <c:out value="IN VALID USER"></c:out>
- <a href="login.jsp"> Try again</a>
+<c:if test="${ !bean.validate() }">
+	 <c:out value="IN VALID UserName or Password"/>
+ 	<a href="index.jsp"> Try again</a>
 </c:if>
 
+ 
+ 
 </body>
 </html>

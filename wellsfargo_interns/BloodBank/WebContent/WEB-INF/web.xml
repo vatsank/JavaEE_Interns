@@ -39,4 +39,24 @@
     <servlet-name>HospitalServlet</servlet-name>
     <url-pattern>/HospitalServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddDonarServlet</display-name>
+    <servlet-name>AddDonarServlet</servlet-name>
+    <servlet-class>com.training.servlets.AddDonarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddDonarServlet</servlet-name>
+    <url-pattern>/AddDonarServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchDonarServlet</display-name>
+    <servlet-name>SearchDonarServlet</servlet-name>
+    <servlet-class>com.training.servlets.SearchDonarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchDonarServlet</servlet-name>
+    <url-pattern>/SearchDonarServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
