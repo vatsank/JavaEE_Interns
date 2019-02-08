@@ -14,6 +14,7 @@
 
 
 <c:if test="${bean.validate()}">
+<c:set value="logged" var="user" scope="session"/>
 	 <jsp:forward page="SearchByGroup.jsp"></jsp:forward>
 </c:if>
 

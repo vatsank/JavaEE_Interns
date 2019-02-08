@@ -59,4 +59,14 @@
     <servlet-name>SearchDonarServlet</servlet-name>
     <url-pattern>/SearchDonarServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChangePassWordServlet</display-name>
+    <servlet-name>ChangePassWordServlet</servlet-name>
+    <servlet-class>com.training.servlets.ChangePassWordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePassWordServlet</servlet-name>
+    <url-pattern>/ChangePassWordServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
